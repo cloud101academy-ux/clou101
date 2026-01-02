@@ -22,35 +22,35 @@ export default function Cloud101Landing() {
   }, []);
 
   // detect ?lead=success and show toast once — improved with logging and safe checks
-useEffect(() => {
-  // run only in browser
-  if (typeof window === 'undefined') return;
+  useEffect(() => {
+    // run only in browser
+    if (typeof window === 'undefined') return;
 
-  try {
-    const params = new URLSearchParams(window.location.search);
-    const lead = params.get('lead');
-    // debug: log so you can see in browser console whether this ran
-    // console.log('Cloud101Landing: lead param =', lead);
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const lead = params.get('lead');
+      // debug: log so you can see in browser console whether this ran
+      // console.log('Cloud101Landing: lead param =', lead);
 
-    if (lead === 'success') {
-      setShowToast(true);
+      if (lead === 'success') {
+        setShowToast(true);
 
-      // remove the query param so refresh won't show toast again
-      params.delete('lead');
-      const newSearch = params.toString();
-      const newUrl = window.location.pathname + (newSearch ? `?${newSearch}` : '') + window.location.hash;
-      // replace the history state without reloading
-      window.history.replaceState({}, document.title, newUrl);
+        // remove the query param so refresh won't show toast again
+        params.delete('lead');
+        const newSearch = params.toString();
+        const newUrl = window.location.pathname + (newSearch ? `?${newSearch}` : '') + window.location.hash;
+        // replace the history state without reloading
+        window.history.replaceState({}, document.title, newUrl);
 
-      // hide toast after 4s
-      const t = setTimeout(() => setShowToast(false), 4000);
-      return () => clearTimeout(t);
+        // hide toast after 4s
+        const t = setTimeout(() => setShowToast(false), 4000);
+        return () => clearTimeout(t);
+      }
+    } catch (err) {
+      // log and continue — safe fallback
+      // console.error('Error reading URL param in Cloud101Landing:', err);
     }
-  } catch (err) {
-    // log and continue — safe fallback
-    // console.error('Error reading URL param in Cloud101Landing:', err);
-  }
-}, []);
+  }, []);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -102,7 +102,7 @@ useEffect(() => {
     { id: 'about', label: 'About' },
     { id: 'batches', label: 'Batches' },
     { id: 'testimonials', label: 'Testimonials' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'contact', label: 'Contact' }
   ];
 
   return (
@@ -112,13 +112,13 @@ useEffect(() => {
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <a href="#home" className="flex items-center gap-2">
-                 <img
+                <img
                   src="/logo.png"
                   alt="Cloud101 Academy Logo"
                   className="h-16 w-auto object-contain"
-                  />
-                </a>
-                {/* <span className="hidden sm:inline font-bold text-gray-900">Cloud101 Academy</span> */}
+                />
+              </a>
+              {/* <span className="hidden sm:inline font-bold text-gray-900">Cloud101 Academy</span> */}
             </div>
 
             <div className="hidden md:flex gap-1">
@@ -126,15 +126,15 @@ useEffect(() => {
                 <button
                   key={link.id}
                   onClick={() => handleNavClick(link.id)}
-                  className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                    activeSection === link.id
+                  className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${activeSection === link.id
                       ? 'bg-blue-50 text-[#0B66FF]'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </button>
               ))}
+              <a href="/blog" className="px-3 py-2 text-sm font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors">Blog</a>
             </div>
 
             <div className="hidden md:block">
@@ -163,15 +163,21 @@ useEffect(() => {
                   <button
                     key={link.id}
                     onClick={() => handleNavClick(link.id)}
-                    className={`px-4 py-2 text-sm font-medium rounded-md text-left transition-colors ${
-                      activeSection === link.id
+                    className={`px-4 py-2 text-sm font-medium rounded-md text-left transition-colors ${activeSection === link.id
                         ? 'bg-blue-50 text-[#0B66FF]'
                         : 'text-gray-600 hover:bg-gray-50'
-                    }`}
+                      }`}
                   >
                     {link.label}
                   </button>
                 ))}
+                <a
+                  href="/blog"
+                  className="px-4 py-2 text-sm font-medium rounded-md text-left text-gray-600 hover:bg-gray-50 transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Blog
+                </a>
                 <a
                   href="#contact"
                   className="px-4 py-2 bg-[#0B66FF] text-white rounded-full font-medium text-center mt-2 hover:bg-[#0546C8]"
@@ -187,7 +193,7 @@ useEffect(() => {
           )}
         </div>
       </nav>
-          {/* Toast Message */}
+      {/* Toast Message */}
       {showToast && (
         <div className="absolute top-6 right-6 z-[9999]">
           <div className="px-4 py-3 bg-green-600 text-white rounded-lg shadow-lg text-sm font-medium">
@@ -225,9 +231,8 @@ useEffect(() => {
                 <a
                   href="#contact"
                   onClick={handleCtaClick}
-                  className={`inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#0B66FF] hover:bg-[#0546C8] text-white font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0B66FF] transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg ${
-                    isMounted && showPulse ? 'animate-pulse' : ''
-                  } ${isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'}`}
+                  className={`inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#0B66FF] hover:bg-[#0546C8] text-white font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0B66FF] transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg ${isMounted && showPulse ? 'animate-pulse' : ''
+                    } ${isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'}`}
                 >
                   Reserve My Seat
                 </a>
@@ -235,9 +240,8 @@ useEffect(() => {
                 <a
                   href="/Cloud 101 - Brochure.pdf"
                   download
-                  className={`flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-300 text-gray-900 font-semibold rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-0.5 ${
-                    isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100' : 'opacity-0'
-                  }`}
+                  className={`flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-300 text-gray-900 font-semibold rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-0.5 ${isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100' : 'opacity-0'
+                    }`}
                 >
                   <Download size={20} />
                   <span>
@@ -263,9 +267,8 @@ useEffect(() => {
               </div>
             </div>
 
-            <div className={`relative h-96 md:h-full md:min-h-96 rounded-2xl overflow-hidden shadow-2xl ${
-              isMounted ? 'animate-in fade-in slide-in-from-right-4 duration-700 delay-200' : 'opacity-0'
-            }`}>
+            <div className={`relative h-96 md:h-full md:min-h-96 rounded-2xl overflow-hidden shadow-2xl ${isMounted ? 'animate-in fade-in slide-in-from-right-4 duration-700 delay-200' : 'opacity-0'
+              }`}>
               <video
                 autoPlay
                 muted
@@ -312,9 +315,8 @@ useEffect(() => {
             ].map((testimonial, idx) => (
               <div
                 key={idx}
-                className={`bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 ${
-                  isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
-                }`}
+                className={`bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 ${isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
+                  }`}
                 style={{ animationDelay: isMounted ? `${idx * 100}ms` : '0ms' }}
               >
                 <div className="flex items-center gap-3 mb-4">
@@ -342,9 +344,8 @@ useEffect(() => {
             ].map((stat, idx) => (
               <div
                 key={idx}
-                className={`text-center p-6 rounded-xl bg-[#F4F8FF] transition-all duration-300 ${
-                  isMounted ? 'animate-in fade-in scale-in duration-700' : 'opacity-0 scale-95'
-                }`}
+                className={`text-center p-6 rounded-xl bg-[#F4F8FF] transition-all duration-300 ${isMounted ? 'animate-in fade-in scale-in duration-700' : 'opacity-0 scale-95'
+                  }`}
                 style={{ animationDelay: isMounted ? `${idx * 100}ms` : '0ms' }}
               >
                 <p className="text-4xl md:text-5xl font-bold text-[#0B66FF] mb-2">{stat.label}</p>
@@ -397,9 +398,8 @@ useEffect(() => {
             ].map((course, idx) => (
               <div
                 key={idx}
-                className={`relative rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105 ${
-                  isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
-                } ${course.badge ? 'ring-2 ring-[#00A3FF] md:scale-105' : ''}`}
+                className={`relative rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105 ${isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
+                  } ${course.badge ? 'ring-2 ring-[#00A3FF] md:scale-105' : ''}`}
                 style={{ animationDelay: isMounted ? `${idx * 100}ms` : '0ms' }}
               >
                 {course.badge && (
@@ -432,11 +432,10 @@ useEffect(() => {
                   <a
                     href="#contact"
                     onClick={handleCtaClick}
-                    className={`inline-flex items-center justify-center w-full py-3 px-5 rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-                      course.badge
+                    className={`inline-flex items-center justify-center w-full py-3 px-5 rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 ${course.badge
                         ? 'bg-[#0B66FF] hover:bg-[#0546C8] text-white focus:ring-[#0B66FF]'
                         : 'border border-gray-200 bg-white hover:bg-gray-50 text-gray-800 focus:ring-[#0B66FF]'
-                    }`}
+                      }`}
                   >
                     Enroll Now
                   </a>
@@ -486,9 +485,8 @@ useEffect(() => {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className={`relative p-8 rounded-xl bg-[#F4F8FF] border border-blue-100 hover:border-blue-300 transition-all duration-300 hover:scale-105 ${
-                  isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
-                }`}
+                className={`relative p-8 rounded-xl bg-[#F4F8FF] border border-blue-100 hover:border-blue-300 transition-all duration-300 hover:scale-105 ${isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
+                  }`}
                 style={{ animationDelay: isMounted ? `${idx * 100}ms` : '0ms' }}
               >
                 <div className="text-4xl font-bold text-[#0B66FF] mb-4">{item.step}</div>
@@ -549,9 +547,8 @@ useEffect(() => {
                 return (
                   <div
                     key={idx}
-                    className={`p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 ${
-                      isMounted ? 'animate-in fade-in slide-in-from-left-4 duration-700' : 'opacity-0'
-                    }`}
+                    className={`p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 ${isMounted ? 'animate-in fade-in slide-in-from-left-4 duration-700' : 'opacity-0'
+                      }`}
                     style={{ animationDelay: isMounted ? `${idx * 100}ms` : '0ms' }}
                   >
                     <div className="flex items-start gap-4">
@@ -568,9 +565,8 @@ useEffect(() => {
               })}
             </div>
 
-            <div className={`flex flex-col gap-6 ${
-              isMounted ? 'animate-in fade-in slide-in-from-right-4 duration-700 delay-200' : 'opacity-0'
-            }`}>
+            <div className={`flex flex-col gap-6 ${isMounted ? 'animate-in fade-in slide-in-from-right-4 duration-700 delay-200' : 'opacity-0'
+              }`}>
               <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 bg-gradient-to-br from-[#0B66FF] to-[#00A3FF] flex items-center justify-center">
                 <img
                   src="/modern-professional-learning-environment-with-peop.jpg"
@@ -688,9 +684,8 @@ useEffect(() => {
             ].map((testimonial, idx) => (
               <div
                 key={idx}
-                className={`p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 ${
-                  isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
-                }`}
+                className={`p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 ${isMounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-700' : 'opacity-0'
+                  }`}
                 style={{ animationDelay: isMounted ? `${idx * 100}ms` : '0ms' }}
               >
                 <div className="flex items-start gap-4 mb-4">
@@ -722,13 +717,13 @@ useEffect(() => {
 
           <form
             className="space-y-6 p-8 bg-[#F4F8FF] rounded-2xl border border-blue-200"
-            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgL00000FceTg" 
+            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgL00000FceTg"
             method="POST"
           >
             {/* Hidden Salesforce Web-to-Lead fields */}
             <input type="hidden" name="oid" value="00DgL00000FceTg" />
             <input type="hidden" name="retURL" value="https://cloud101.in?lead=success" />
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-semibold text-gray-900 mb-2">First Name *</label>
@@ -785,21 +780,21 @@ useEffect(() => {
               </div>
             </div>
             <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">Interested Track *</label>
-                <select
-                  id="00NgL00002IRbjf"
-                  name="00NgL00002IRbjf"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0B66FF] focus:border-transparent outline-none transition"
-                >
-                  <option value="">--None--</option>
-                  <option value="Salesforce Admin">Salesforce Admin</option>
-                  <option value="Salesforce Developer">Salesforce Developer</option>
-                  <option value="Salesforce Full Stack">Salesforce Full Stack</option>
-                  <option value="Want to attend Free Session">Want to attend free session</option>
-                  <option value="Not yet decided">Not yet decided</option>
-                </select>
-              </div>
+              <label className="block text-sm font-semibold text-gray-900 mb-2">Interested Track *</label>
+              <select
+                id="00NgL00002IRbjf"
+                name="00NgL00002IRbjf"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0B66FF] focus:border-transparent outline-none transition"
+              >
+                <option value="">--None--</option>
+                <option value="Salesforce Admin">Salesforce Admin</option>
+                <option value="Salesforce Developer">Salesforce Developer</option>
+                <option value="Salesforce Full Stack">Salesforce Full Stack</option>
+                <option value="Want to attend Free Session">Want to attend free session</option>
+                <option value="Not yet decided">Not yet decided</option>
+              </select>
+            </div>
 
             <div>
               <label className="block text-sm font-semibold text-gray-900 mb-2">Message (Optional)</label>
@@ -831,8 +826,8 @@ useEffect(() => {
           </form>
         </div>
       </section>
-         
-      <Footer/>
+
+      <Footer />
     </main>
   );
 }

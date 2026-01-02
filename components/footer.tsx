@@ -73,7 +73,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Platform</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a href="/blog" className="hover:text-white transition">
                   Blog
                 </a>
               </li>
