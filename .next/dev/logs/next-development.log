@@ -1,30 +1,921 @@
-[00:00:21.583] Server  LOG      ✓ Ready in 11.9s
-[00:00:24.663] Server  LOG      ○ Compiling / ...
-[00:00:48.280] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:48.607] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:48.607] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:48.607] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767371950249}
-[00:00:50.828] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:50.829] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__6748b84e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:50.832] Server  WARN    Error: Route "/blog/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:00:50.847] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__6748b84e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:50.849] Server  ERROR    ⨯ ReferenceError: returnd is not defined
-[00:00:52.089] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:52.244] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:52.244] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/","route":"/blog/"}
-[00:00:52.244] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767371953876}
-[00:00:55.250] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:55.250] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__6748b84e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:55.251] Server  WARN    Error: Route "/blog/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:00:55.261] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__6748b84e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:55.261] Server  ERROR    ⨯ ReferenceError: returnd is not defined
-[00:00:55.440] Browser ERROR   uncaughtError: ReferenceError: returnd is not defined
-[00:01:20.271] Server  LOG      ✓ Compiled in 1886ms
-[00:01:22.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:22.677] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:22.677] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/my-first-blog/","route":"/blog/[slug]/"}
-[00:01:22.677] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/my-first-blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/my-first-blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767371984304}
-[00:01:49.013] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/my-second-blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/my-second-blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767372010656}
-[00:01:51.514] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:01:51.514] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767372013157}
-[00:01:53.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/my-second-blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/my-second-blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767372015179}
+[00:00:21.066] Server  LOG      ✓ Ready in 13.6s
+[00:00:38.935] Server  LOG      ○ Compiling / ...
+[00:01:02.116] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:04.902] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:04.902] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:01:04.902] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883531750}
+[00:01:06.930] Server  LOG      ○ Compiling /blog ...
+[00:01:11.987] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:12.225] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:12.225] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/","route":"/blog/"}
+[00:01:12.225] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883539686}
+[00:01:25.457] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883552944}
+[00:02:13.296] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:13.297] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__8efc116f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:13.298] Server  WARN    Error: Route "/blog/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:13.329] Server  LOG      ✓ Compiled in 2s
+[00:02:16.487] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:16.488] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__8efc116f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:16.488] Server  WARN    Error: Route "/blog/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:17.279] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:17.435] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:17.435] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-agentforce/","route":"/blog/[slug]/"}
+[00:02:17.435] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883604982}
+[00:02:20.126] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883607619}
+[00:02:21.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:21.921] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:21.921] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/","route":"/blog/"}
+[00:02:21.921] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883609448}
+[00:02:22.625] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:22.626] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__8efc116f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:22.626] Server  WARN    Error: Route "/blog/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:22.796] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883610336}
+[00:02:25.095] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:25.095] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883612636}
+[00:02:25.994] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:25.995] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__8efc116f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:02:25.995] Server  WARN    Error: Route "/blog/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:26.143] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883613680}
+[00:05:42.912] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883810454}
+[00:05:45.647] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883813180}
+[00:05:54.844] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883822387}
+[00:05:55.915] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883823457}
+[00:06:08.637] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883836168}
+[00:06:14.027] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767883841571}
+[00:11:16.572] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:11:16.596] Server  LOG      ✓ Compiled in 1172ms
+[00:11:20.691] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:21.035] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:21.035] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-agentforce/","route":"/blog/[slug]/"}
+[00:11:21.035] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884148574}
+[00:11:29.168] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:11:29.429] Server  LOG      ✓ Compiled in 89ms
+[00:11:29.677] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:30.095] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:30.095] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-agentforce/","route":"/blog/[slug]/"}
+[00:11:30.095] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884157602}
+[00:11:33.747] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:33.994] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:33.994] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-agentforce/","route":"/blog/[slug]/"}
+[00:11:33.994] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884161530}
+[00:11:38.354] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:11:38.650] Server  LOG      ✓ Compiled in 112ms
+[00:11:38.996] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:39.278] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:39.278] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-agentforce/","route":"/blog/[slug]/"}
+[00:11:39.278] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884166785}
+[00:12:32.400] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:12:32.421] Server  LOG      ✓ Compiled in 334ms
+[00:12:32.967] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:33.820] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:33.820] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-agentforce/","route":"/blog/[slug]/"}
+[00:12:33.820] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884220878}
+[00:13:54.357] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:54.653] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:13:54.654] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-agentforce/","route":"/blog/[slug]/"}
+[00:13:54.654] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884302177}
+[00:14:09.436] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:14:09.437] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884316971}
+[00:14:11.160] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884318700}
+[00:16:07.077] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:16:07.101] Server  LOG      ✓ Compiled in 239ms
+[00:16:09.855] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:10.093] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:16:10.093] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:16:10.093] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884437624}
+[00:20:41.881] Server  LOG      ✓ Compiled in 1142ms
+[00:20:41.941] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:20:42.388] Server  ERROR   Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:20:42.562] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:42.566] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__270d7531._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:42.568] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:20:42.597] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'useState')
+[00:20:44.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:46.806] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:21:07.272] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:21:08.044] Server  ERROR   Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:21:08.085] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:21:08.087] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__270d7531._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:21:08.089] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:21:08.090] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'useState')
+[00:21:08.129] Server  LOG      ✓ Compiled in 609ms
+[00:21:08.130] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__51d697a8._.css
+[00:21:08.159] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:21:08.160] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:21:08.164] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:21:08.323] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:21:08.324] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[root-of-the-server]__270d7531._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:21:08.325] Server  ERROR   D:\Business\Clou101Academy\Cloud101 Academy\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:21:08.326] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'useState')
+[00:21:08.708] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:09.843] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:22:29.716] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:29.716] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:22:29.716] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:29.721] Server  LOG      ✓ Compiled in 167ms
+[00:22:30.895] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:32.461] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:32.461] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:22:32.461] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884819377}
+[00:23:03.236] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:03.563] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:23:03.563] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:23:03.563] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884851053}
+[00:24:00.500] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:00.828] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:24:00.828] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:24:00.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767884908327}
+[00:28:00.637] Server  LOG      ✓ Compiled in 666ms
+[00:28:54.363] Server  LOG      ✓ Compiled in 599ms
+[00:28:54.811] Browser ERROR   ./app/blog/[slug]/page.js:34:7
+Ecmascript file had an error
+  32 |    PORTABLE TEXT COMPONENTS
+  33 | ---------------------------------------- */
+> 34 | const portableTextComponents = {
+     |       ^^^^^^^^^^^^^^^^^^^^^^
+  35 |   types: {
+  36 |     code: ({ value }) => {
+  37 |       const [copied, setCopied] = useState(false);
+
+the name `portableTextComponents` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:29:31.330] Server  LOG      ✓ Compiled in 86ms
+[00:29:31.806] Browser ERROR   ./app/blog/[slug]/page.js:34:7
+Ecmascript file had an error
+  32 |    PORTABLE TEXT COMPONENTS
+  33 | ---------------------------------------- */
+> 34 | const portableTextComponents = {
+     |       ^^^^^^^^^^^^^^^^^^^^^^
+  35 |   types: {
+  36 |     code: ({ value }) => {
+  37 |       const [copied, setCopied] = useState(false);
+
+the name `portableTextComponents` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:30:00.544] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:04.055] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:04.606] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:04.606] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:30:04.606] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885272133}
+[00:32:16.980] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:32:16.980] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885404511}
+[00:32:19.021] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885406556}
+[00:32:35.250] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885422780}
+[00:32:37.032] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/latest-blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/latest-blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885424569}
+[00:35:02.860] Server  LOG      ✓ Compiled in 1045ms
+[00:35:03.816] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:03.816] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:12.628] Server  ERROR    ⨯ ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+
+
+
+./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+
+
+[00:35:12.771] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:12.771] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:15.663] Server  LOG      ○ Compiling /_error ...
+[00:35:15.928] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:15.928] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:16.410] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:16.410] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:18.911] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:18.911] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:19.265] Browser ERROR   uncaughtError: Error: ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+
+
+[00:35:21.352] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:21.352] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:21.814] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:21.814] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:39.805] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:39.805] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:43.746] Server  ERROR    ⨯ ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+
+
+
+./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+
+
+[00:35:43.997] Browser ERROR   uncaughtError: Error: ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+
+
+[00:35:44.313] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:44.313] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:44.313] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:35:44.313] Browser ERROR   ./app/blog/[slug]/page.js:11:1
+Export portableTextComponents doesn't exist in target module
+   9 | import BlogHeader from "@/components/BlogHeader";
+  10 | import { Linkedin, Link as LinkIcon } from "lucide-react";
+> 11 | import { portableTextComponents } from "@/lib/portableTextComponents";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 |
+  14 |
+
+The export portableTextComponents was not found in module [project]/lib/portableTextComponents.js [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.js [Client Component Browser]
+    ./app/blog/[slug]/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.js [Client Component SSR]
+    ./app/blog/[slug]/page.js [Server Component]
+[00:38:41.377] Server  LOG      ✓ Compiled in 162ms
+[00:38:45.881] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:46.132] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/blog/late..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         suppresshydrationwarning="true"
+-                         data-qb-installed="true"
+                        >
+                  ...
+
+[00:38:46.132] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:38:46.132] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/latest-blog/","route":"/blog/[slug]/"}
+[00:38:46.132] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/latest-blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/latest-blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885793668}
+[00:38:59.249] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:38:59.249] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885806774}
+[00:39:01.489] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885809016}
+[00:39:26.795] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885834330}
+[00:39:28.520] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885836045}
+[00:40:29.730] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885897265}
+[00:40:36.600] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885904130}
+[00:40:42.887] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885910422}
+[00:40:44.603] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885912138}
+[00:41:14.610] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:16.707] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:41:16.707] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:41:16.708] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767885943634}
+[00:45:48.740] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:49.048] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:45:49.048] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:45:49.049] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886216585}
+[00:50:12.723] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:50:12.792] Server  LOG      ✓ Compiled in 602ms
+[00:50:16.427] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:16.770] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:50:16.770] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:50:16.770] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886484297}
+[00:53:31.049] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:53:31.072] Server  LOG      ✓ Compiled in 101ms
+[00:53:34.063] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:34.807] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:53:34.807] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:53:34.807] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886682044}
+[00:54:15.607] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:54:15.630] Server  LOG      ✓ Compiled in 157ms
+[00:54:16.263] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:17.748] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:54:17.749] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:54:17.749] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886724512}
+[00:54:22.799] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:23.145] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:54:23.145] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:54:23.145] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886730661}
+[00:56:44.458] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/blog/[slug]/page.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:56:44.480] Server  LOG      ✓ Compiled in 101ms
+[00:56:47.697] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:48.120] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/blog/what..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         suppresshydrationwarning="true"
+-                         data-qb-installed="true"
+                        >
+                  ...
+
+[00:56:48.120] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:56:48.120] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/what-is-cors/","route":"/blog/[slug]/"}
+[00:56:48.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886875650}
+[00:57:42.003] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:57:42.003] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886929538}
+[00:57:43.336] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886930861}
+[00:58:17.270] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886964799}
+[00:58:24.074] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767886971599}
+[01:01:13.309] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/my-second-blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/my-second-blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887140832}
+[01:01:17.367] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-cors/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-cors/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887144885}
+[01:01:39.937] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887167456}
+[01:01:41.943] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887169474}
+[01:02:12.659] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887200106}
+[01:02:14.929] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887202433}
+[01:02:36.541] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:02:36.542] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/","route":"/blog/"}
+[01:02:36.542] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/","o":"http://localhost:3000/blog/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887224071}
+[01:02:49.287] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/what-is-agentforce/ color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]/","o":"http://localhost:3000/blog/what-is-agentforce/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767887236800}

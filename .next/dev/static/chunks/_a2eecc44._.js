@@ -624,6 +624,230 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/lib/portableTextComponents.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "portableTextComponents",
+    ()=>portableTextComponents
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+/* ----------------------------------------
+   CODE BLOCK (Copy + Feedback)
+---------------------------------------- */ function CodeBlock({ value }) {
+    _s();
+    const [copied, setCopied] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const handleCopy = async ()=>{
+        try {
+            await navigator.clipboard.writeText(value.code || "");
+            setCopied(true);
+            setTimeout(()=>setCopied(false), 2000);
+        } catch (err) {
+            console.error("Copy failed:", err);
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "relative my-10 group",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: handleCopy,
+                className: "absolute top-3 right-3 text-xs px-3 py-1.5 rounded-md   bg-gray-800 text-gray-200 hover:bg-gray-700   opacity-100 sm:opacity-0 sm:group-hover:opacity-100   transition",
+                "aria-label": "Copy code",
+                children: copied ? "Copied ✓" : "Copy"
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pre", {
+                className: "rounded-2xl bg-gray-900 text-gray-100 p-5 overflow-x-auto text-sm leading-relaxed",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
+                    children: value.code
+                }, void 0, false, {
+                    fileName: "[project]/lib/portableTextComponents.js",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/lib/portableTextComponents.js",
+        lineNumber: 22,
+        columnNumber: 5
+    }, this);
+}
+_s(CodeBlock, "NE86rL3vg4NVcTTWDavsT0hUBJs=");
+_c = CodeBlock;
+/* ----------------------------------------
+   IMAGE
+---------------------------------------- */ function ImageBlock({ value }) {
+    if (!value?.asset?.url) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
+        className: "my-10",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                src: value.asset.url,
+                alt: value.alt || "",
+                className: "rounded-2xl mx-auto max-h-[460px] object-contain",
+                loading: "lazy"
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 50,
+                columnNumber: 7
+            }, this),
+            value.alt && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figcaption", {
+                className: "mt-3 text-center text-sm text-gray-500",
+                children: value.alt
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 57,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/lib/portableTextComponents.js",
+        lineNumber: 49,
+        columnNumber: 5
+    }, this);
+}
+_c1 = ImageBlock;
+/* ----------------------------------------
+   LINK MARK
+---------------------------------------- */ function LinkMark({ value, children }) {
+    const isExternal = value?.href?.startsWith("http");
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+        href: value?.href,
+        target: isExternal ? "_blank" : undefined,
+        rel: isExternal ? "noopener noreferrer" : undefined,
+        className: "text-[#0B66FF] underline underline-offset-4 hover:text-[#0546C8]",
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/lib/portableTextComponents.js",
+        lineNumber: 72,
+        columnNumber: 5
+    }, this);
+}
+_c2 = LinkMark;
+const portableTextComponents = {
+    types: {
+        code: CodeBlock,
+        image: ImageBlock
+    },
+    marks: {
+        link: LinkMark,
+        strong: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                className: "font-semibold text-gray-900",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 95,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+        em: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                className: "italic text-gray-700",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 98,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0))
+    },
+    list: {
+        bullet: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                className: "my-6 ml-6 list-disc space-y-2 text-gray-800",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 104,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+        number: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
+                className: "my-6 ml-6 list-decimal space-y-2 text-gray-800",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 109,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0))
+    },
+    listItem: {
+        bullet: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                className: "leading-relaxed",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 116,
+                columnNumber: 31
+            }, ("TURBOPACK compile-time value", void 0)),
+        number: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                className: "leading-relaxed",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 117,
+                columnNumber: 31
+            }, ("TURBOPACK compile-time value", void 0))
+    },
+    block: {
+        h2: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-3xl font-bold mt-16 mb-6 text-gray-900",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 122,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+        h3: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "text-2xl font-semibold mt-12 mb-4 text-gray-900",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 127,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+        h4: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                className: "text-xl font-semibold mt-10 mb-3 text-gray-900",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 132,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+        normal: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "my-6 text-lg leading-relaxed text-gray-800",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 137,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+        blockquote: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
+                className: "border-l-4 border-[#0B66FF] pl-6 my-8 italic text-gray-700",
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 142,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0))
+    }
+};
+var _c, _c1, _c2;
+__turbopack_context__.k.register(_c, "CodeBlock");
+__turbopack_context__.k.register(_c1, "ImageBlock");
+__turbopack_context__.k.register(_c2, "LinkMark");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/app/blog/[slug]/page.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -643,9 +867,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx_
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$BlogHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/BlogHeader.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-client] (ecmascript) <export default as Linkedin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/link.js [app-client] (ecmascript) <export default as Link>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$portableTextComponents$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/portableTextComponents.js [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -663,64 +889,8 @@ const dynamic = "force-dynamic";
     const minutes = Math.max(1, Math.ceil(words / 200));
     return `${minutes} min read`;
 }
-/* ----------------------------------------
-   PORTABLE TEXT COMPONENTS
----------------------------------------- */ const portableTextComponents = {
-    types: {
-        code: _s(({ value })=>{
-            _s();
-            const [copied, setCopied] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-            const handleCopy = async ()=>{
-                try {
-                    await navigator.clipboard.writeText(value.code);
-                    setCopied(true);
-                    setTimeout(()=>{
-                        setCopied(false);
-                    }, 2000);
-                } catch (err) {
-                    console.error("Copy failed", err);
-                }
-            };
-            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative my-10",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: handleCopy,
-                        className: `absolute top-3 right-3 text-xs px-3 py-1 rounded-md transition
-              ${copied ? "bg-green-600 text-white" : "bg-gray-800 text-gray-200 hover:bg-gray-700"}
-            `,
-                        children: copied ? "Copied!" : "Copy"
-                    }, void 0, false, {
-                        fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 53,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pre", {
-                        className: "bg-gray-900 text-gray-100 rounded-2xl p-6 overflow-x-auto text-sm",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                            className: "font-mono whitespace-pre",
-                            children: value.code
-                        }, void 0, false, {
-                            fileName: "[project]/app/blog/[slug]/page.js",
-                            lineNumber: 67,
-                            columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0))
-                    }, void 0, false, {
-                        fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 66,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/blog/[slug]/page.js",
-                lineNumber: 51,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0));
-        }, "NE86rL3vg4NVcTTWDavsT0hUBJs=")
-    }
-};
 function BlogPostPage() {
-    _s1();
+    _s();
     const { slug } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"])();
     const [linkCopied, setLinkCopied] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [post, setPost] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -777,7 +947,7 @@ function BlogPostPage() {
                     }["BlogPostPage.useEffect.fetchData.categoryIds"]);
                     const related = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$sanity$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sanityClient"].fetch(`*[_type=="post" &&
             references($categoryIds) &&
-            slug.current != $slug][0...5]{
+            slug.current != $slug][0...3]{
               _id,
               title,
               "slug": slug.current,
@@ -803,7 +973,7 @@ function BlogPostPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$BlogHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.js",
-                lineNumber: 169,
+                lineNumber: 121,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -815,12 +985,12 @@ function BlogPostPage() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/blog/[slug]/page.js",
-                    lineNumber: 175,
+                    lineNumber: 127,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.js",
-                lineNumber: 174,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             pageUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -844,12 +1014,12 @@ function BlogPostPage() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.js",
-                            lineNumber: 206,
+                            lineNumber: 158,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 187,
+                        lineNumber: 139,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -862,22 +1032,22 @@ function BlogPostPage() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.js",
-                            lineNumber: 219,
+                            lineNumber: 171,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 210,
+                        lineNumber: 162,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/blog/[slug]/page.js",
-                lineNumber: 185,
+                lineNumber: 137,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "max-w-3xl mx-auto px-5 py-16 pt-20",
+                className: "max-w-4xl mx-auto px-5 py-16 pt-20",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/blog",
@@ -885,7 +1055,7 @@ function BlogPostPage() {
                         children: "← Back to Blog"
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 229,
+                        lineNumber: 181,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -895,12 +1065,12 @@ function BlogPostPage() {
                                 children: cat.title
                             }, cat._id, false, {
                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                lineNumber: 239,
+                                lineNumber: 191,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 237,
+                        lineNumber: 189,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -908,7 +1078,7 @@ function BlogPostPage() {
                         children: post.title
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 249,
+                        lineNumber: 201,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -920,7 +1090,7 @@ function BlogPostPage() {
                                 className: "w-9 h-9 rounded-full object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                lineNumber: 256,
+                                lineNumber: 208,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -928,7 +1098,7 @@ function BlogPostPage() {
                                 children: post.author?.name
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                lineNumber: 262,
+                                lineNumber: 214,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -939,28 +1109,28 @@ function BlogPostPage() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                lineNumber: 265,
+                                lineNumber: 217,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: readTime
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                lineNumber: 272,
+                                lineNumber: 224,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 254,
+                        lineNumber: 206,
                         columnNumber: 9
                     }, this),
                     post.excerpt && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg md:text-xl font-semibold text-gray-700 leading-relaxed border-l-4 border-blue-600 pl-4 mb-12",
+                        className: "text-lg font-medium text-gray-700 leading-relaxed mb-10 border-l-4 border-blue-600 pl-4",
                         children: post.excerpt
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 277,
+                        lineNumber: 229,
                         columnNumber: 11
                     }, this),
                     post.mainImage?.asset?.url && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -969,22 +1139,22 @@ function BlogPostPage() {
                         className: "w-full max-h-[420px] object-cover rounded-3xl mb-14"
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 283,
+                        lineNumber: 237,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                         className: "   prose    prose-lg    prose-slate    max-w-none      prose-headings:font-bold   prose-headings:tracking-tight   prose-headings:text-gray-900      prose-p:text-gray-700   prose-p:leading-8      prose-a:text-blue-600   hover:prose-a:underline      prose-strong:text-gray-900   ",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$portabletext$2f$react$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["PortableText"], {
                             value: post.content,
-                            components: portableTextComponents
+                            components: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$portableTextComponents$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["portableTextComponents"]
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.js",
-                            lineNumber: 311,
+                            lineNumber: 265,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 291,
+                        lineNumber: 245,
                         columnNumber: 9
                     }, this),
                     relatedPosts.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -995,28 +1165,28 @@ function BlogPostPage() {
                                 children: "Related articles"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                lineNumber: 322,
-                                columnNumber: 13
+                                lineNumber: 276,
+                                columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-8",
+                                className: "grid gap-8 sm:grid-cols-2 lg:grid-cols-3",
                                 children: relatedPosts.map((rp)=>{
                                     const relatedReadTime = `${Math.max(1, Math.ceil((rp.excerpt?.split(/\s+/).length || 100) / 200))} min read`;
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: `/blog/${rp.slug}`,
-                                        className: "group bg-white border rounded-2xl overflow-hidden hover:shadow-xl transition-all flex flex-col",
+                                        className: "group bg-white border rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col",
                                         children: [
                                             rp.mainImage?.asset?.url && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: rp.mainImage.asset.url,
                                                 alt: rp.title,
-                                                className: "h-44 w-full object-cover group-hover:scale-105 transition-transform"
+                                                className: "h-48 w-full object-cover group-hover:scale-105 transition-transform"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                                lineNumber: 338,
-                                                columnNumber: 23
+                                                lineNumber: 292,
+                                                columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "p-5 flex flex-col flex-1",
+                                                className: "p-6 flex flex-col flex-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex flex-wrap gap-2 mb-3",
@@ -1025,28 +1195,28 @@ function BlogPostPage() {
                                                                 children: cat.title
                                                             }, cat.title, false, {
                                                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                                                lineNumber: 348,
-                                                                columnNumber: 27
+                                                                lineNumber: 302,
+                                                                columnNumber: 19
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/blog/[slug]/page.js",
-                                                        lineNumber: 346,
-                                                        columnNumber: 23
+                                                        lineNumber: 300,
+                                                        columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "font-semibold text-lg mb-2 line-clamp-2",
                                                         children: rp.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/blog/[slug]/page.js",
-                                                        lineNumber: 357,
-                                                        columnNumber: 23
+                                                        lineNumber: 311,
+                                                        columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex-1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/blog/[slug]/page.js",
-                                                        lineNumber: 361,
-                                                        columnNumber: 23
+                                                        lineNumber: 315,
+                                                        columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex items-center justify-between text-sm text-gray-500 mt-4",
@@ -1060,74 +1230,74 @@ function BlogPostPage() {
                                                                         className: "w-6 h-6 rounded-full object-cover"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/blog/[slug]/page.js",
-                                                                        lineNumber: 366,
-                                                                        columnNumber: 29
+                                                                        lineNumber: 320,
+                                                                        columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         children: rp.author?.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/blog/[slug]/page.js",
-                                                                        lineNumber: 372,
-                                                                        columnNumber: 27
+                                                                        lineNumber: 326,
+                                                                        columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                                                lineNumber: 364,
-                                                                columnNumber: 25
+                                                                lineNumber: 318,
+                                                                columnNumber: 17
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 children: relatedReadTime
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                                                lineNumber: 375,
-                                                                columnNumber: 25
+                                                                lineNumber: 329,
+                                                                columnNumber: 17
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/blog/[slug]/page.js",
-                                                        lineNumber: 363,
-                                                        columnNumber: 23
+                                                        lineNumber: 317,
+                                                        columnNumber: 15
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                                lineNumber: 345,
-                                                columnNumber: 21
+                                                lineNumber: 299,
+                                                columnNumber: 13
                                             }, this)
                                         ]
                                     }, rp._id, true, {
                                         fileName: "[project]/app/blog/[slug]/page.js",
-                                        lineNumber: 332,
-                                        columnNumber: 19
+                                        lineNumber: 286,
+                                        columnNumber: 11
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.js",
-                                lineNumber: 324,
-                                columnNumber: 13
+                                lineNumber: 278,
+                                columnNumber: 5
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/blog/[slug]/page.js",
-                        lineNumber: 321,
-                        columnNumber: 11
+                        lineNumber: 275,
+                        columnNumber: 3
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/blog/[slug]/page.js",
-                lineNumber: 227,
+                lineNumber: 179,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.js",
-                lineNumber: 386,
+                lineNumber: 341,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s1(BlogPostPage, "ZIC7fndhFPrlobZrELmLQbGYrIM=", false, function() {
+_s(BlogPostPage, "ZIC7fndhFPrlobZrELmLQbGYrIM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"]
     ];
@@ -1141,4 +1311,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=_91c18dfa._.js.map
+//# sourceMappingURL=_a2eecc44._.js.map

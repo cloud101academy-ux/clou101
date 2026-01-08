@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/blog/my-first-blog":{},"/blog/my-third-blog":{},"/blog/my-second-blog":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":false,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"a52aee14f179b3f54e11b99da34fd394","previewModeSigningKey":"4909b2c03c62fd4a81216a9852a3faee9b7e1c270eca87437cfd016087b9858d","previewModeEncryptionKey":"3187268a23a3aa974022a77ce3d37c0da0e76c1ff59b9c730331f823283696f1"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "9f6403a11b631e00a8f076a7daf46f68",
+    "previewModeSigningKey": "744d0e2c2f2188132d24b33d83d4f61a1fba268d3a7359c044dd133dad530f9b",
+    "previewModeEncryptionKey": "969804063b0b542e5c736a1f89b3987d31a52f0d7f8fbffeee5ebd81102a37fc"
+  }
+}
