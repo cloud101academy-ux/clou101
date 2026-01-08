@@ -638,7 +638,7 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 /* ----------------------------------------
-   CODE BLOCK (Copy + Feedback)
+   CODE BLOCK (Filename + Copy + Feedback)
 ---------------------------------------- */ function CodeBlock({ value }) {
     _s();
     const [copied, setCopied] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -652,8 +652,22 @@ var _s = __turbopack_context__.k.signature();
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative my-10 group",
+        className: "relative my-10 rounded-2xl overflow-hidden border border-gray-800 bg-gray-900 group",
         children: [
+            value.filename && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center justify-between px-4 py-2 text-xs font-mono text-gray-300 bg-gray-950 border-b border-gray-800",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: value.filename
+                }, void 0, false, {
+                    fileName: "[project]/lib/portableTextComponents.js",
+                    lineNumber: 26,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/lib/portableTextComponents.js",
+                lineNumber: 25,
+                columnNumber: 9
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: handleCopy,
                 className: "absolute top-3 right-3 text-xs px-3 py-1.5 rounded-md   bg-gray-800 text-gray-200 hover:bg-gray-700   opacity-100 sm:opacity-0 sm:group-hover:opacity-100   transition",
@@ -661,21 +675,21 @@ var _s = __turbopack_context__.k.signature();
                 children: copied ? "Copied ✓" : "Copy"
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 24,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pre", {
-                className: "rounded-2xl bg-gray-900 text-gray-100 p-5 overflow-x-auto text-sm leading-relaxed",
+                className: "p-5 overflow-x-auto text-sm leading-relaxed text-gray-100",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
                     children: value.code
                 }, void 0, false, {
                     fileName: "[project]/lib/portableTextComponents.js",
-                    lineNumber: 36,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 35,
+                lineNumber: 43,
                 columnNumber: 7
             }, this)
         ]
@@ -701,7 +715,7 @@ _c = CodeBlock;
                 loading: "lazy"
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 50,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             value.alt && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figcaption", {
@@ -709,13 +723,13 @@ _c = CodeBlock;
                 children: value.alt
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 57,
+                lineNumber: 65,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/lib/portableTextComponents.js",
-        lineNumber: 49,
+        lineNumber: 57,
         columnNumber: 5
     }, this);
 }
@@ -732,7 +746,7 @@ _c1 = ImageBlock;
         children: children
     }, void 0, false, {
         fileName: "[project]/lib/portableTextComponents.js",
-        lineNumber: 72,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }
@@ -749,7 +763,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 95,
+                lineNumber: 103,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
         em: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
@@ -757,7 +771,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 98,
+                lineNumber: 106,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
     },
@@ -767,7 +781,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 104,
+                lineNumber: 112,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
         number: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
@@ -775,7 +789,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 109,
+                lineNumber: 117,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
     },
@@ -785,7 +799,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 116,
+                lineNumber: 124,
                 columnNumber: 31
             }, ("TURBOPACK compile-time value", void 0)),
         number: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -793,7 +807,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 117,
+                lineNumber: 125,
                 columnNumber: 31
             }, ("TURBOPACK compile-time value", void 0))
     },
@@ -803,7 +817,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 122,
+                lineNumber: 130,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
         h3: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -811,7 +825,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 127,
+                lineNumber: 135,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
         h4: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -819,7 +833,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 132,
+                lineNumber: 140,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
         normal: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -827,7 +841,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 137,
+                lineNumber: 145,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
         blockquote: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
@@ -835,7 +849,7 @@ const portableTextComponents = {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/lib/portableTextComponents.js",
-                lineNumber: 142,
+                lineNumber: 150,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
     }
