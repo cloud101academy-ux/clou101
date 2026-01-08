@@ -2,6 +2,7 @@ import BlogHeader from "@/components/BlogHeader";
 import BlogPageClient from "./BlogPageClient";
 import Footer from "@/components/footer";
 import { sanityClient } from "@/lib/sanity";
+export const dynamic = 'force-dynamic'
 
 export const metadata = {
   title: "Blog | Cloud101 Academy",
