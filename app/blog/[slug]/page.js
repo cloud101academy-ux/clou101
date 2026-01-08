@@ -7,7 +7,12 @@ import { sanityClient } from "@/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Footer from "@/components/footer";
 import BlogHeader from "@/components/BlogHeader";
-export const dynamic = 'force-dynamic'
+import { Linkedin, Link as LinkIcon } from "lucide-react";
+import { portableTextComponents } from "@/lib/portableTextComponents";
+
+
+
+export const dynamic = "force-dynamic";
 
 /* ----------------------------------------
    HELPERS
@@ -28,7 +33,7 @@ function calculateReadTime(content = []) {
 ---------------------------------------- */
 export default function BlogPostPage() {
   const { slug } = useParams();
-
+  const [linkCopied, setLinkCopied] = useState(false);
   const [post, setPost] = useState(null);
   const [relatedPosts, setRelatedPosts] = useState([]);
   const [progress, setProgress] = useState(0);
@@ -87,21 +92,16 @@ export default function BlogPostPage() {
 
         const related = await sanityClient.fetch(
           `*[_type=="post" &&
-  references($categoryIds) &&
-  slug.current != $slug][0...5]{
-    _id,
-    title,
-    excerpt,
-    "slug": slug.current,
-    mainImage{ asset->{url} },
-    categories[]->{title},
-    author->{
-      name,
-      image{
-        asset->{url}
-      }
-    }
-}`,
+            references($categoryIds) &&
+            slug.current != $slug][0...3]{
+              _id,
+              title,
+              "slug": slug.current,
+              excerpt,
+              mainImage{ asset->{url} },
+              categories[]->{title},
+              author->{ name, image{asset->{url}} }
+            }`,
           { categoryIds, slug }
         );
 
@@ -131,48 +131,60 @@ export default function BlogPostPage() {
       </div>
 
       {/* ----------------------------------------
-          SHARE SIDEBAR
-      ---------------------------------------- */}
-      {pageUrl && (
-        <div className="hidden lg:flex fixed right-6 top-1/3 flex-col gap-3 z-40">
-          <button
-            onClick={() => navigator.clipboard.writeText(pageUrl)}
-            className="w-10 h-10 rounded-full border bg-white flex items-center justify-center hover:bg-gray-100 shadow-sm"
-            title="Copy link"
-          >
-            🔗
-          </button>
+    SHARE SIDEBAR
+---------------------------------------- */}
+{pageUrl && (
+  <div className="hidden lg:flex fixed right-6 top-1/3 flex-col gap-3 z-40">
+    {/* Copy Link */}
+    <button
+      onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(pageUrl);
+          setLinkCopied(true);
+          setTimeout(() => setLinkCopied(false), 2000);
+        } catch (e) {
+          console.error("Failed to copy link");
+        }
+      }}
+      className={`w-10 h-10 rounded-full border flex items-center justify-center shadow-sm transition
+        ${
+          linkCopied
+            ? "bg-green-600 text-white border-green-600"
+            : "bg-white text-gray-700 hover:bg-gray-100"
+        }
+      `}
+      title="Copy link"
+    >
+      <LinkIcon size={18} />
+    </button>
 
-          <a
-            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-              pageUrl
-            )}&text=${encodeURIComponent(post.title)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border bg-white flex items-center justify-center hover:bg-gray-100 shadow-sm"
-            title="Share on Twitter"
-          >
-            🐦
-          </a>
-
-          <a
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-              pageUrl
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border bg-white flex items-center justify-center hover:bg-gray-100 shadow-sm"
-            title="Share on LinkedIn"
-          >
-            💼
-          </a>
-        </div>
-      )}
+    {/* LinkedIn Share */}
+    <a
+      href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+        pageUrl
+      )}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 rounded-full border bg-white flex items-center justify-center hover:bg-gray-100 shadow-sm transition text-[#0A66C2]"
+      title="Share on LinkedIn"
+    >
+      <Linkedin size={18} />
+    </a>
+  </div>
+)}
 
       {/* ----------------------------------------
           POST CONTENT
       ---------------------------------------- */}
       <main className="max-w-4xl mx-auto px-5 py-16 pt-20">
+        {/* Back Button */}
+        <Link
+          href="/blog"
+          className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline mb-6"
+        >
+          ← Back to Blog
+        </Link>
+
         {/* Categories */}
         <div className="flex flex-wrap gap-2 mb-4">
           {post.categories?.map((cat) => (
@@ -186,110 +198,146 @@ export default function BlogPostPage() {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+          {post.title}
+        </h1>
 
         {/* Meta */}
-        <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-8">
+        <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-10">
           {post.author?.image?.asset?.url && (
             <img
               src={post.author.image.asset.url}
               alt={post.author.name}
-              className="w-8 h-8 rounded-full object-cover"
+              className="w-9 h-9 rounded-full object-cover"
             />
           )}
-          <span>{post.author?.name}</span>
+          <span className="font-medium text-gray-700">
+            {post.author?.name}
+          </span>
           <span>
-            Published on {new Date(post.publishedAt).toLocaleDateString()}
+            {new Date(post.publishedAt).toLocaleDateString("en-IN", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
           </span>
           <span>{readTime}</span>
         </div>
+
+         {/* Excerpt */}
+        {post.excerpt && (
+          <p className="text-lg font-medium text-gray-700 leading-relaxed mb-10 border-l-4 border-blue-600 pl-4">
+            {post.excerpt}
+          </p>
+        )}
+
 
         {/* Featured Image */}
         {post.mainImage?.asset?.url && (
           <img
             src={post.mainImage.asset.url}
             alt={post.title}
-            className="w-full max-h-[420px] object-cover rounded-3xl mb-12"
+            className="w-full max-h-[420px] object-cover rounded-3xl mb-14"
           />
         )}
 
         {/* Content */}
-        <article className="prose prose-lg max-w-none">
-          <PortableText value={post.content} />
+        <article
+          className="
+            prose 
+            prose-lg 
+            prose-slate 
+            max-w-none
+
+            prose-headings:font-bold
+            prose-headings:tracking-tight
+            prose-headings:text-gray-900
+
+            prose-p:text-gray-700
+            prose-p:leading-8
+
+            prose-a:text-blue-600
+            hover:prose-a:underline
+
+            prose-strong:text-gray-900
+          "
+        >
+          <PortableText
+            value={post.content}
+            components={portableTextComponents}
+          />
         </article>
 
         {/* ----------------------------------------
             RELATED POSTS
         ---------------------------------------- */}
-        {relatedPosts.length > 0 && (
-          <section className="mt-24">
-            <h2 className="text-2xl font-bold mb-8">Related articles</h2>
+       {relatedPosts.length > 0 && (
+  <section className="mt-24">
+    <h2 className="text-2xl font-bold mb-8">Related articles</h2>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {relatedPosts.map((rp) => {
-                const relatedReadTime = `${Math.max(
-                  1,
-                  Math.ceil((rp.excerpt?.split(/\s+/).length || 100) / 200)
-                )} min read`;
+    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {relatedPosts.map((rp) => {
+        const relatedReadTime = `${Math.max(
+          1,
+          Math.ceil((rp.excerpt?.split(/\s+/).length || 100) / 200)
+        )} min read`;
 
-                return (
-                  <Link
-                    key={rp._id}
-                    href={`/blog/${rp.slug}`}
-                    className="group bg-white border rounded-2xl overflow-hidden hover:shadow-xl transition-all flex flex-col"
+        return (
+          <Link
+            key={rp._id}
+            href={`/blog/${rp.slug}`}
+            className="group bg-white border rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col"
+          >
+            {rp.mainImage?.asset?.url && (
+              <img
+                src={rp.mainImage.asset.url}
+                alt={rp.title}
+                className="h-48 w-full object-cover group-hover:scale-105 transition-transform"
+              />
+            )}
+
+            <div className="p-6 flex flex-col flex-1">
+              <div className="flex flex-wrap gap-2 mb-3">
+                {rp.categories?.slice(0, 2).map((cat) => (
+                  <span
+                    key={cat.title}
+                    className="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-full"
                   >
-                    {rp.mainImage?.asset?.url && (
-                      <img
-                        src={rp.mainImage.asset.url}
-                        alt={rp.title}
-                        className="h-44 w-full object-cover group-hover:scale-105 transition-transform"
-                      />
-                    )}
+                    {cat.title}
+                  </span>
+                ))}
+              </div>
 
-                    <div className="p-5 flex flex-col flex-1">
-                      <div className="flex flex-wrap gap-2 mb-3">
-                        {rp.categories?.slice(0, 2).map((cat) => (
-                          <span
-                            key={cat.title}
-                            className="text-xs bg-blue-50 text-blue-600 px-2.5 py-1 rounded-full"
-                          >
-                            {cat.title}
-                          </span>
-                        ))}
-                      </div>
+              <h3 className="font-semibold text-lg mb-2 line-clamp-2">
+                {rp.title}
+              </h3>
 
-                      <h3 className="font-semibold text-lg mb-2 line-clamp-2">
-                        {rp.title}
-                      </h3>
+              <div className="flex-1" />
 
-                      <div className="flex-1" />
+              <div className="flex items-center justify-between text-sm text-gray-500 mt-4">
+                <div className="flex items-center gap-2">
+                  {rp.author?.image?.asset?.url && (
+                    <img
+                      src={rp.author.image.asset.url}
+                      alt={rp.author.name}
+                      className="w-6 h-6 rounded-full object-cover"
+                    />
+                  )}
+                  <span>{rp.author?.name}</span>
+                </div>
 
-                      <div className="flex items-center justify-between text-sm text-gray-500 mt-4">
-                        <div className="flex items-center gap-2">
-                          {rp.author?.image?.asset?.url && (
-                            <img
-                              src={rp.author.image.asset.url}
-                              alt={rp.author.name}
-                              className="w-6 h-6 rounded-full object-cover"
-                            />
-                          )}
-                          <span>{rp.author?.name}</span>
-                        </div>
-
-                        <span>{relatedReadTime}</span>
-                      </div>
-                    </div>
-                  </Link>
-                );
-              })}
+                <span>{relatedReadTime}</span>
+              </div>
             </div>
-          </section>
-        )}
+          </Link>
+        );
+      })}
+    </div>
+  </section>
+)}
+
       </main>
 
-      {/* ----------------------------------------
-          FOOTER (FULL WIDTH)
-      ---------------------------------------- */}
       <Footer />
     </>
   );
