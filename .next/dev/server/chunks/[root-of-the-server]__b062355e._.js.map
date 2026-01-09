@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///D:/Business/Clou101Academy/Cloud101%20Academy/app/robots.txt/route.js"],"sourcesContent":["export function GET() {\r\n  const content = `\r\nUser-agent: *\r\nAllow: /\r\n\r\nSitemap: https://cloud101.in/sitemap.xml\r\n`;\r\n\r\n  return new Response(content, {\r\n    headers: {\r\n      \"Content-Type\": \"text/plain\",\r\n    },\r\n  });\r\n}\r\n"],"names":[],"mappings":";;;;AAAO,SAAS;IACd,MAAM,UAAU,CAAC;;;;;AAKnB,CAAC;IAEC,OAAO,IAAI,SAAS,SAAS;QAC3B,SAAS;YACP,gBAAgB;QAClB;IACF;AACF"}}]
+}

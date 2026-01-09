@@ -5,5 +5,7 @@
   "/blog/page": "app/blog/page.js",
   "/page": "app/page.js",
   "/privacy/page": "app/privacy/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/terms/page": "app/terms/page.js"
 }

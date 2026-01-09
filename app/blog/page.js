@@ -5,10 +5,37 @@ import { sanityClient } from "@/lib/sanity";
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: "Blog | Cloud101 Academy",
+  title: "Salesforce Blog | Cloud101 Academy",
   description:
-    "Salesforce, AI, and Cloud insights from Cloud101 Academy instructors.",
+    "Salesforce Admin, Developer, AI, and Cloud tutorials by Cloud101 Academy. Practical guides, real-world use cases, and career-focused insights.",
+  keywords: [
+    "Salesforce blog",
+    "Salesforce tutorials",
+    "Salesforce Admin",
+    "Salesforce Developer",
+    "Salesforce career",
+    "Cloud computing",
+    "AI in Salesforce",
+  ],
+  alternates: {
+    canonical: "https://cloud101.in/blog",
+  },
+  openGraph: {
+    title: "Salesforce Blog | Cloud101 Academy",
+    description:
+      "Practical Salesforce Admin & Developer blogs, AI insights, and Cloud best practices.",
+    url: "https://cloud101.in/blog",
+    siteName: "Cloud101 Academy",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salesforce Blog | Cloud101 Academy",
+    description:
+      "Practical Salesforce Admin & Developer blogs, AI insights, and Cloud best practices.",
+  },
 };
+
 
 const BLOG_LIST_QUERY = `
 *[_type == "post"] | order(publishedAt desc){
