@@ -9,50 +9,24 @@ module.exports = mod;
 
 __turbopack_context__.n(__turbopack_context__.i("[project]/app/layout.tsx [app-rsc] (ecmascript)"));
 }),
-"[project]/app/blog/[slug]/page.js [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/app/blog/[slug]/page.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
-const { jsxDEV: _jsxDEV } = __turbopack_context__.r("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-{}/*#__PURE__*/ _jsxDEV("div", {
-    className: "hidden lg:flex fixed right-6 top-1/3 flex-col gap-3 z-40",
-    children: [
-        /*#__PURE__*/ _jsxDEV("button", {
-            onClick: ()=>navigator.clipboard.writeText(window.location.href),
-            className: "w-10 h-10 flex items-center justify-center rounded-full border bg-white hover:bg-gray-100 shadow-sm",
-            title: "Copy link",
-            children: "🔗"
-        }, void 0, false, {
-            fileName: "[project]/app/blog/[slug]/page.js",
-            lineNumber: 4,
-            columnNumber: 3
-        }, /*TURBOPACK member replacement*/ __turbopack_context__.e),
-        /*#__PURE__*/ _jsxDEV("a", {
-            href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`,
-            target: "_blank",
-            className: "w-10 h-10 flex items-center justify-center rounded-full border bg-white hover:bg-gray-100 shadow-sm",
-            title: "Share on Twitter",
-            children: "🐦"
-        }, void 0, false, {
-            fileName: "[project]/app/blog/[slug]/page.js",
-            lineNumber: 13,
-            columnNumber: 3
-        }, /*TURBOPACK member replacement*/ __turbopack_context__.e),
-        /*#__PURE__*/ _jsxDEV("a", {
-            href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`,
-            target: "_blank",
-            className: "w-10 h-10 flex items-center justify-center rounded-full border bg-white hover:bg-gray-100 shadow-sm",
-            title: "Share on LinkedIn",
-            children: "💼"
-        }, void 0, false, {
-            fileName: "[project]/app/blog/[slug]/page.js",
-            lineNumber: 25,
-            columnNumber: 3
-        }, /*TURBOPACK member replacement*/ __turbopack_context__.e)
-    ]
-}, void 0, true, {
-    fileName: "[project]/app/blog/[slug]/page.js",
-    lineNumber: 2,
-    columnNumber: 1
-}, /*TURBOPACK member replacement*/ __turbopack_context__.e);
+__turbopack_context__.s([
+    "default",
+    ()=>TestPage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+function TestPage() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+        children: "Blog page works"
+    }, void 0, false, {
+        fileName: "[project]/app/blog/[slug]/page.js",
+        lineNumber: 2,
+        columnNumber: 10
+    }, this);
+}
 }),
 "[project]/app/blog/[slug]/page.js [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
 

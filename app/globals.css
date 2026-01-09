@@ -128,3 +128,52 @@
     scroll-behavior: smooth;
   }
 }
+
+/* Paragraph text */
+.blog-content p {
+  font-size: 17px;
+  line-height: 1.2;
+  color: #333333;
+  margin: 32px 0;
+}
+
+/* Headings */
+.blog-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 72px;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+.blog-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 56px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* Links */
+.blog-content a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Lists */
+.blog-content ul,
+.blog-content ol {
+  margin: 36px 0;
+  padding-left: 28px;
+}
+
+.blog-content li {
+  margin: 14px 0;
+}
+
+/* Code blocks spacing */
+.blog-content pre {
+  margin: 48px 0;
+}

@@ -172,8 +172,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$sanity$2e$js__$5b$app
 ;
 const dynamic = 'force-dynamic';
 const metadata = {
-    title: "Blog | Cloud101 Academy",
-    description: "Salesforce, AI, and Cloud insights from Cloud101 Academy instructors."
+    title: "Salesforce Blog | Cloud101 Academy",
+    description: "Salesforce Admin, Developer, AI, and Cloud tutorials by Cloud101 Academy. Practical guides, real-world use cases, and career-focused insights.",
+    keywords: [
+        "Salesforce blog",
+        "Salesforce tutorials",
+        "Salesforce Admin",
+        "Salesforce Developer",
+        "Salesforce career",
+        "Cloud computing",
+        "AI in Salesforce"
+    ],
+    alternates: {
+        canonical: "https://cloud101.in/blog"
+    },
+    openGraph: {
+        title: "Salesforce Blog | Cloud101 Academy",
+        description: "Practical Salesforce Admin & Developer blogs, AI insights, and Cloud best practices.",
+        url: "https://cloud101.in/blog",
+        siteName: "Cloud101 Academy",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Salesforce Blog | Cloud101 Academy",
+        description: "Practical Salesforce Admin & Developer blogs, AI insights, and Cloud best practices."
+    }
 };
 const BLOG_LIST_QUERY = `
 *[_type == "post"] | order(publishedAt desc){
@@ -202,7 +226,7 @@ async function BlogPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$BlogHeader$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/blog/page.js",
-                lineNumber: 40,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -210,17 +234,17 @@ async function BlogPage() {
                     posts: posts
                 }, void 0, false, {
                     fileName: "[project]/app/blog/page.js",
-                    lineNumber: 43,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/page.js",
-                lineNumber: 42,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/blog/page.js",
-                lineNumber: 46,
+                lineNumber: 73,
                 columnNumber: 7
             }, this)
         ]
