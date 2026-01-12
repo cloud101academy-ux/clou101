@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
+import WhatsAppButton from "@/components/WhatsAppButton";
 import './globals.css'
 
 const _geist = Geist({ subsets: ['latin'] })
@@ -53,6 +54,8 @@ export default function RootLayout({
 
       <body className="font-sans antialiased">
         {children}
+        <WhatsAppButton  phoneNumber="918623022095"
+          message="Hello! I'm interested in your training programs." />
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BVWFZ8DSC6"
@@ -61,11 +64,11 @@ export default function RootLayout({
 
         <Script id="ga4-init" strategy="afterInteractive">
           {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BVWFZ8DSC6', {
-        page_path: window.location.pathname,
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BVWFZ8DSC6', {
+            page_path: window.location.pathname,
       });
     `}
         </Script>
