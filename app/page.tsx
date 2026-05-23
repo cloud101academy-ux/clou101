@@ -215,7 +215,7 @@ export default function Cloud101Landing() {
               <div className="inline-block">
                 <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#F4F8FF] rounded-full text-sm font-medium text-[#0B66FF] border border-blue-200">
                   <span className="w-2 h-2 bg-[#00A3FF] rounded-full animate-pulse"></span>
-                  Next batch: January 15, 2025
+                  Next batch: June 15, 2026
                 </span>
               </div>
 
@@ -615,9 +615,9 @@ export default function Cloud101Landing() {
               </thead>
               <tbody>
                 {[
-                  { batch: 'Jan-A', track: 'Admin', date: 'Jan 15', duration: '10 weeks', schedule: 'Tue & Thu 7-9 PM' },
-                  { batch: 'Jan-B', track: 'Developer', date: 'Jan 20', duration: '12 weeks', schedule: 'Sat & Sun 10-1 PM' },
-                  { batch: 'Feb-A', track: 'Full-Stack', date: 'Feb 3', duration: '18 weeks', schedule: 'Mon-Fri 2-5 PM' },
+                  { batch: 'June-A', track: 'Developer', date: 'June 15', duration: '10 weeks', schedule: 'Mon-Fri 8:30 AM - 10:30 AM' },
+                  { batch: 'June-B', track: 'Developer', date: 'June 20', duration: '12 weeks', schedule: 'Mon-Fri 10:30 AM - 11:30 AM' },
+                  { batch: 'July-A', track: 'Full-Stack', date: 'July 3', duration: '18 weeks', schedule: 'Mon-Fri 9:30 PM - 11:30 PM' },
                 ].map((row, idx) => (
                   <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="py-4 px-4 text-gray-900 font-semibold">{row.batch}</td>
@@ -813,7 +813,7 @@ export default function Cloud101Landing() {
                 className="w-5 h-5 mt-1 border-gray-300 rounded focus:ring-[#0B66FF] cursor-pointer"
               />
               <label htmlFor="privacy" className="text-sm text-gray-700">
-                I agree to Cloud101's <a href="/privacy-policy">privacy policy</a> and to be contacted about courses & offers.
+                I agree to Cloud101's <a href="/privacy">privacy policy</a> and to be contacted about courses & offers.
               </label>
             </div>
 
